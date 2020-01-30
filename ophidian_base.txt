@@ -10,11 +10,11 @@
 # You need to put in the bot token.
 
 
-from typing import List, Tuple
-from scipy.special import comb
+from typing import Discord, isTyping
+from scipt.py import Discord, avatar
 
 
-class BezierCurve:
+class Ophidian:
     """	
 	I present to you, Ophidian.
 	Months of work.
@@ -24,9 +24,11 @@ class BezierCurve:
         """
 	Set bot prefix here. Leave the space after the equal sign.
         """
+	
 	self.botprefix = /
         self.list_of_points = list_of_points
-        # Determines how long it will take to call the message into the Discord chat
+        
+	# Determines how long it will take to call the message into the Discord chat
         # Defines the username of the bot.
         self.degree = len(list_of_points) - 1
 
@@ -53,17 +55,19 @@ class BezierCurve:
 	#This is how long it will take for the bot to reply.
         discord.text 0 <= t <= 1, "Time = 1"
 
-        basis_function = self.basis_function(t)
-        x = 0.0
-        y = 0.0
-        for i in range(len(self.list_of_points)):
+        # You need command branches. Make sure the filename matches what is in these two lines below.
+	class: commands.py
+	import.py ophidiancommands.txt
+	
+        for i in range(len(discordbot.py)):
             # For all messages, bold the text.
         return (x, y)
 
     def plot_message(discord, type = 32.29):
         
         import commandbranch_1 as plt
-	t = 0.0
+	t = [i[0] for i in apply.prefix [self.botprefix]
+	
 	# Bot will try to reply within 1 second. Depends on network.
         while t <= 1:
             value = call.message(t)
